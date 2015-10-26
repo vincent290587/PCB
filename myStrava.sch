@@ -5204,6 +5204,48 @@ http://www.digikey.com/product-detail/en/20021221-00010C4LF/609-3700-1-ND/220915
 </deviceset>
 </devicesets>
 </library>
+<library name="Strutz Electronic Industries">
+<packages>
+<package name="IND-2020">
+<smd name="P$1" x="0.325" y="1" dx="0.65" dy="2" layer="1"/>
+<smd name="P$2" x="1.675" y="1" dx="0.65" dy="2" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="INDUCTOR">
+<wire x1="-5.08" y1="0" x2="-3.81" y2="1.27" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="-2.54" y1="0" x2="-3.81" y2="1.27" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="2.54" y1="0" x2="3.81" y2="1.27" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="5.08" y1="0" x2="3.81" y2="1.27" width="0.254" layer="94" curve="90" cap="flat"/>
+<text x="-5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MDMK2020T4R7MM">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="IND-2020">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5219,8 +5261,11 @@ http://www.digikey.com/product-detail/en/20021221-00010C4LF/609-3700-1-ND/220915
 <class number="2" name="charge" width="0.381" drill="0.1524">
 <clearance class="2" value="0.1524"/>
 </class>
-<class number="3" name="usb" width="0.254" drill="0.1524">
-<clearance class="3" value="0.1524"/>
+<class number="3" name="usb" width="0.2032" drill="0.1524">
+<clearance class="0" value="0.1524"/>
+<clearance class="1" value="0.1524"/>
+<clearance class="2" value="0.1524"/>
+<clearance class="3" value="0.2286"/>
 </class>
 </classes>
 <parts>
@@ -5331,6 +5376,8 @@ http://www.digikey.com/product-detail/en/20021221-00010C4LF/609-3700-1-ND/220915
 <part name="JTAG" library="con-cortex" deviceset="2X5_0.05&quot;_CORTEX_DEBUG" device="TH_NOKEY_UNSHROUDED"/>
 <part name="U$51" library="microbuilder" deviceset="GND" device=""/>
 <part name="SUPPLY19" library="supply2" deviceset="VCC" device=""/>
+<part name="U$2" library="microbuilder" deviceset="GND" device=""/>
+<part name="SPK" library="Strutz Electronic Industries" deviceset="MDMK2020T4R7MM" device="" value="FARNELL_SPK"/>
 </parts>
 <sheets>
 <sheet>
@@ -5444,6 +5491,8 @@ http://www.digikey.com/product-detail/en/20021221-00010C4LF/609-3700-1-ND/220915
 <instance part="JTAG" gate="G$1" x="-33.02" y="-259.08" rot="R270"/>
 <instance part="U$51" gate="G$1" x="-40.64" y="-246.38" rot="R180"/>
 <instance part="SUPPLY19" gate="G$1" x="-22.86" y="-248.92"/>
+<instance part="U$2" gate="G$1" x="83.82" y="-193.04" rot="R90"/>
+<instance part="SPK" gate="G$1" x="66.04" y="-193.04"/>
 </instances>
 <busses>
 </busses>
@@ -5667,6 +5716,11 @@ http://www.digikey.com/product-detail/en/20021221-00010C4LF/609-3700-1-ND/220915
 <wire x1="-38.1" y1="-256.54" x2="-38.1" y2="-251.46" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="-251.46" x2="-40.64" y2="-251.46" width="0.1524" layer="91"/>
 <junction x="-40.64" y="-251.46"/>
+</segment>
+<segment>
+<pinref part="SPK" gate="G$1" pin="2"/>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<wire x1="73.66" y1="-193.04" x2="81.28" y2="-193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VDD" class="0">
@@ -5967,7 +6021,7 @@ http://www.digikey.com/product-detail/en/20021221-00010C4LF/609-3700-1-ND/220915
 <junction x="-203.2" y="-40.64"/>
 </segment>
 </net>
-<net name="USB_DP_P" class="3">
+<net name="USB_DM_P" class="3">
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
 <pinref part="MK20DN512" gate="G$1" pin="USB0_DP"/>
@@ -5981,7 +6035,7 @@ http://www.digikey.com/product-detail/en/20021221-00010C4LF/609-3700-1-ND/220915
 <wire x1="-114.3" y1="-134.62" x2="-93.98" y2="-134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="USB1_DP_P" class="3">
+<net name="USB1_DM_P" class="3">
 <segment>
 <pinref part="USB" gate="G$1" pin="D+"/>
 <wire x1="-142.24" y1="-137.16" x2="-142.24" y2="-129.54" width="0.1524" layer="91"/>
@@ -6266,6 +6320,13 @@ http://www.digikey.com/product-detail/en/20021221-00010C4LF/609-3700-1-ND/220915
 <wire x1="-33.02" y1="-238.76" x2="-38.1" y2="-238.76" width="0.1524" layer="91"/>
 <pinref part="MK20DN512" gate="G$1" pin="PTA1"/>
 <wire x1="-38.1" y1="-238.76" x2="-38.1" y2="-218.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="MK20DN512" gate="G$1" pin="PTB1"/>
+<pinref part="SPK" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="-193.04" x2="58.42" y2="-193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
