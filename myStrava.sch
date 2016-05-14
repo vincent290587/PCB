@@ -5716,7 +5716,7 @@ interface.</description>
 <instance part="USB" gate="G$1" x="-149.86" y="-139.7" rot="R270"/>
 <instance part="R8" gate="G$1" x="-116.84" y="-129.54"/>
 <instance part="R9" gate="G$1" x="-127" y="-134.62"/>
-<instance part="U$16" gate="G$1" x="-198.12" y="-45.72" rot="R270"/>
+<instance part="U$16" gate="G$1" x="-195.58" y="-45.72" rot="R270"/>
 <instance part="U$11" gate="G$1" x="-218.44" y="-40.64" rot="R90"/>
 <instance part="SUPPLY2" gate="G$1" x="-157.48" y="-40.64" rot="R270"/>
 <instance part="SUPPLY8" gate="G$1" x="-106.68" y="-139.7" rot="R90"/>
@@ -5849,7 +5849,7 @@ interface.</description>
 <segment>
 <pinref part="U$16" gate="G$1" pin="GND"/>
 <pinref part="LDO0" gate="G$1" pin="GND"/>
-<wire x1="-195.58" y1="-45.72" x2="-187.96" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="-193.04" y1="-45.72" x2="-187.96" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MK20DN512" gate="G$1" pin="VSS4"/>
@@ -6353,10 +6353,10 @@ interface.</description>
 <net name="N$32" class="0">
 <segment>
 <pinref part="SST25" gate="G$1" pin="CE"/>
-<wire x1="129.54" y1="-88.9" x2="96.52" y2="-88.9" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="-88.9" x2="96.52" y2="-121.92" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-88.9" x2="101.6" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-88.9" x2="101.6" y2="-121.92" width="0.1524" layer="91"/>
 <pinref part="MK20DN512" gate="G$1" pin="PTC0"/>
-<wire x1="96.52" y1="-121.92" x2="45.72" y2="-121.92" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-121.92" x2="45.72" y2="-121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$35" class="0">
@@ -6762,11 +6762,6 @@ interface.</description>
 <approved hash="104,1,-96.52,17.78,N550,GND2,GND,,,"/>
 <approved hash="104,1,-101.6,63.5,NAV,C,N$13,,,"/>
 <approved hash="202,1,-170.18,-50.8,LDO0,BP,,,,"/>
-<approved hash="104,1,-218.44,-35.56,U1,G,GND,,,"/>
-<approved hash="208,1,332.74,-254,VCC-ISO,sup,,,,"/>
-<approved hash="208,1,360.68,-241.3,VCC-ISO,sup,,,,"/>
-<approved hash="208,1,-274.32,-40.64,VCC-ISO,sup,,,,"/>
-<approved hash="208,1,-254,-40.64,VCC-ISO,out,,,,"/>
 </errors>
 </schematic>
 </drawing>
