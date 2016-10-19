@@ -2703,159 +2703,6 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Sensors">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find sensors- accelerometers, gyros, compasses, magnetometers, light sensors, imagers, temp sensors, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="BMP180">
-<circle x="0.75" y="0.75" radius="0.125" width="0.6096" layer="21"/>
-<circle x="0.75" y="0.75" radius="0.125" width="0.6096" layer="21"/>
-<circle x="0.75" y="0.75" radius="0.125" width="0.6096" layer="51"/>
-<wire x1="-1.9" y1="1.8" x2="-1.9" y2="-1.8" width="0.127" layer="51"/>
-<wire x1="-1.9" y1="-1.8" x2="1.9" y2="-1.8" width="0.127" layer="51"/>
-<wire x1="1.9" y1="-1.8" x2="1.9" y2="1.8" width="0.127" layer="51"/>
-<wire x1="1.9" y1="1.8" x2="-1.9" y2="1.8" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="1" x2="-1.5" y2="-1" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="-1" x2="-1" y2="-1.5" width="0.127" layer="51" curve="90"/>
-<wire x1="-1" y1="-1.5" x2="1" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="1" y1="-1.5" x2="1.5" y2="-1" width="0.127" layer="51" curve="90"/>
-<wire x1="1.5" y1="-1" x2="1.5" y2="1" width="0.127" layer="51"/>
-<wire x1="1.5" y1="1" x2="1" y2="1.5" width="0.127" layer="51" curve="90"/>
-<wire x1="1" y1="1.5" x2="-1" y2="1.5" width="0.127" layer="51"/>
-<wire x1="-1" y1="1.5" x2="-1.5" y2="1" width="0.127" layer="51" curve="90"/>
-<wire x1="-2" y1="1.875" x2="-2" y2="-1.875" width="0.127" layer="21"/>
-<wire x1="-2" y1="-1.875" x2="2" y2="-1.875" width="0.127" layer="21"/>
-<wire x1="2" y1="-1.875" x2="2" y2="1.875" width="0.127" layer="21"/>
-<wire x1="2" y1="1.875" x2="-2" y2="1.875" width="0.127" layer="21"/>
-<pad name="GND_" x="1.78" y="-0.06" drill="0.5"/>
-<pad name="SCL_" x="0.02" y="-1.52" drill="0.5"/>
-<pad name="SDA_" x="1.78" y="-1.56" drill="0.5"/>
-<pad name="VDD" x="0.02" y="1.44" drill="0.5"/>
-<pad name="VDDIO" x="-1.65" y="1.4" drill="0.5"/>
-<text x="-2" y="2" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2" y="-3.375" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="BMP180">
-<description>BOSCH BMP180 DIGITAL BAROMETRIC PRESSURE SENSOR&lt;p&gt;
-
-Web page: &lt;a href="http://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp180_1/bmp180"&gt;http://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp180_1/bmp180&lt;/a&gt;&lt;br&gt;
-Datasheet: &lt;a href="http://ae-bst.resource.bosch.com/media/products/dokumente/bmp180/BST-BMP180-DS000-09.pdf"&gt; http://ae-bst.resource.bosch.com/media/products/dokumente/bmp180/BST-BMP180-DS000-09.pdf&lt;/a&gt;&lt;p&gt;
-
-The BMP180 is the function compatible successor of the BMP085, a new generation of high
-precision digital pressure sensors for consumer applications.&lt;p&gt;
-The ultra-low power, low voltage electronics of the BMP180 is optimized for use in mobile phones,
-PDAs, GPS navigation devices and outdoor equipment. With a low altitude noise of merely 0.25m at
-fast conversion time, the BMP180 offers superior performance. The I2C interface allows for easy
-system integration with a microcontroller.&lt;p&gt;
-The BMP180 is based on piezo-resistive technology for EMC robustness, high accuracy and linearity as
-well as long term stability.&lt;p&gt;
-
-Key features:&lt;p&gt;
-
-- Temperature measurement included&lt;br&gt;
-- I2C interface&lt;br&gt;
-- Fully calibrated&lt;br&gt;
-- Pb-free, halogen-free and RoHS compliant,&lt;br&gt;
-- MSL 1&lt;p&gt;
-
-Basic specs:&lt;p&gt;
-
-Pressure range: 300 to 1100hPa (+9000m to -500m relating to sea level)&lt;br&gt;
-Supply voltage: 1.8 to 3.6V (VDD), 1.62V to 3.6V (VDDIO)&lt;br&gt;
-Package: LGA package with metal lid&lt;br&gt;
-Small footprint: 3.6mm x 3.8mm&lt;br&gt;
-Super-flat: 0.93mm height&lt;br&gt;
-Low power: 5µA at 1 sample / sec. in standard mode&lt;br&gt;
-Low noise: 0.06hPa (0.5m) in ultra low power mode, 0.02hPa (0.17m) advanced resolution mode&lt;p&gt;
-
-Typical applications:&lt;p&gt;
-
-- Enhancement of GPS navigation (dead-reckoning, slope detection, etc.)&lt;br&gt;
-- In- and out-door navigation&lt;br&gt;
-- Leisure and sports&lt;br&gt;
-- Weather forecast&lt;br&gt;
-- Vertical velocity indication (rise/sink speed)</description>
-<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<pin name="GND" x="15.24" y="-5.08" length="middle" direction="pwr" rot="R180"/>
-<pin name="SCL" x="-15.24" y="-2.54" length="middle" direction="in"/>
-<pin name="SDA" x="-15.24" y="2.54" length="middle"/>
-<pin name="VDD" x="15.24" y="5.08" length="middle" direction="pwr" rot="R180"/>
-<pin name="VDDIO" x="15.24" y="0" length="middle" direction="pwr" rot="R180"/>
-<text x="-10.16" y="8.255" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="BMP180" prefix="U">
-<description>BOSCH BMP180 DIGITAL BAROMETRIC PRESSURE SENSOR&lt;p&gt;
-
-Web page: &lt;a href="http://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp180_1/bmp180"&gt;http://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp180_1/bmp180&lt;/a&gt;&lt;br&gt;
-Datasheet: &lt;a href="http://ae-bst.resource.bosch.com/media/products/dokumente/bmp180/BST-BMP180-DS000-09.pdf"&gt; http://ae-bst.resource.bosch.com/media/products/dokumente/bmp180/BST-BMP180-DS000-09.pdf&lt;/a&gt;&lt;p&gt;
-
-The BMP180 is the function compatible successor of the BMP085, a new generation of high
-precision digital pressure sensors for consumer applications.&lt;p&gt;
-The ultra-low power, low voltage electronics of the BMP180 is optimized for use in mobile phones,
-PDAs, GPS navigation devices and outdoor equipment. With a low altitude noise of merely 0.25m at
-fast conversion time, the BMP180 offers superior performance. The I2C interface allows for easy
-system integration with a microcontroller.&lt;p&gt;
-The BMP180 is based on piezo-resistive technology for EMC robustness, high accuracy and linearity as
-well as long term stability.&lt;p&gt;
-
-Key features:&lt;p&gt;
-
-- Temperature measurement included&lt;br&gt;
-- I2C interface&lt;br&gt;
-- Fully calibrated&lt;br&gt;
-- Pb-free, halogen-free and RoHS compliant,&lt;br&gt;
-- MSL 1&lt;p&gt;
-
-Basic specs:&lt;p&gt;
-
-Pressure range: 300 to 1100hPa (+9000m to -500m relating to sea level)&lt;br&gt;
-Supply voltage: 1.8 to 3.6V (VDD), 1.62V to 3.6V (VDDIO)&lt;br&gt;
-Package: LGA package with metal lid&lt;br&gt;
-Small footprint: 3.6mm x 3.8mm&lt;br&gt;
-Super-flat: 0.93mm height&lt;br&gt;
-Low power: 5µA at 1 sample / sec. in standard mode&lt;br&gt;
-Low noise: 0.06hPa (0.5m) in ultra low power mode, 0.02hPa (0.17m) advanced resolution mode&lt;p&gt;
-
-Typical applications:&lt;p&gt;
-
-- Enhancement of GPS navigation (dead-reckoning, slope detection, etc.)&lt;br&gt;
-- In- and out-door navigation&lt;br&gt;
-- Leisure and sports&lt;br&gt;
-- Weather forecast&lt;br&gt;
-- Vertical velocity indication (rise/sink speed)</description>
-<gates>
-<gate name="G$1" symbol="BMP180" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="BMP180">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND_"/>
-<connect gate="G$1" pin="SCL" pad="SCL_"/>
-<connect gate="G$1" pin="SDA" pad="SDA_"/>
-<connect gate="G$1" pin="VDD" pad="VDD"/>
-<connect gate="G$1" pin="VDDIO" pad="VDDIO"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Aesthetics">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
@@ -5532,6 +5379,78 @@ interface.</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="MS5637">
+<packages>
+<package name="MS5637TH">
+<pad name="VDD" x="-1" y="1" drill="0.6"/>
+<pad name="GND" x="1" y="1" drill="0.6"/>
+<pad name="SCL" x="1" y="-1" drill="0.6"/>
+<pad name="SDA" x="-1" y="-1" drill="0.6"/>
+</package>
+<package name="MS5637">
+<smd name="VDD" x="-1" y="1" dx="1" dy="1" layer="1"/>
+<smd name="GND" x="1" y="1" dx="1" dy="1" layer="1"/>
+<smd name="SCL" x="1" y="-1" dx="1" dy="1" layer="1"/>
+<smd name="SDA" x="-1" y="-1" dx="1" dy="1" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MS5637">
+<wire x1="-10.16" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="VDD" x="-15.24" y="2.54" length="middle"/>
+<pin name="SDA" x="-15.24" y="-5.08" length="middle"/>
+<pin name="GND" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="SCL" x="12.7" y="-5.08" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MS5637">
+<description>Le MS563702BA03-50 est un Micro Altimètre ultra compact optimisé pour des applications d'altimètre et de baromètre dans des téléphones portables et des tablettes.
+La résolution d'altitude au niveau de la mer est de 13cm d'air. Le module de capteur comprend un capteur de pression haute linéarité et un CAN &amp;Delta;Σ 24 bits ultra
+faible puissance avec des coefficients internes calibrés en usine. Il fournit une valeur numérique de pression et de température précise de 24 bits et différents modes
+de fonctionnement qui permettent à l'utilisateur d'optimiser la vitesse de conversion et la consommation de courant. La sortie de température à haute résolution permet
+la mise en œuvre d'une fonction altimètre / thermomètre sans capteur supplémentaire. Il peut être interfacé avec pratiquement tous les microcontrôleurs à interface I²C-bus.
+Le protocole de communication est simple, sans avoir à programmer des registres internes dans l'appareil. Faibles dimensions de 3 x 3 x 0.9mm³ pour une intégratio
+Module haute résolution, 13cm
+Capteur de pression numérique intégré (CAN ΔΣ 24 bits)
+Interface I²C
+Plage de pression étendue de 10 à 2000mbar
+Conversion rapide jusqu'à 0.5ms
+Faible consommation, 0.6µA (veille &lt;=0.1µA à 25°C)
+Aucun composant externe (oscillateur interne)</description>
+<gates>
+<gate name="G$1" symbol="MS5637" x="-7.62" y="10.16"/>
+</gates>
+<devices>
+<device name="" package="MS5637">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TH" package="MS5637TH">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5566,7 +5485,7 @@ interface.</description>
 <part name="C4" library="SparkFun-Capacitors" deviceset="10UF-6.3V-20%(1206)" device="" value="10uF"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="10UF-6.3V-20%(1206)" device="" value="10uF"/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-RED" device="1206" value="RED"/>
-<part name="BMP180" library="SparkFun-Sensors" deviceset="BMP180" device=""/>
+<part name="MS5637" library="MS5637" deviceset="MS5637" device="" value="MS5637"/>
 <part name="U$21" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$22" library="microbuilder" deviceset="GND" device=""/>
 <part name="C7" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="0.1uF"/>
@@ -5577,14 +5496,14 @@ interface.</description>
 <part name="SUPPLY5" library="supply2" deviceset="VCC" device=""/>
 <part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="4.7k"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="4.7k"/>
-<part name="MT3339" library="adafruit" deviceset="GPS_FGPMMOPA6H" device="" value="GTK"/>
+<part name="MT3333" library="adafruit" deviceset="GPS_FGPMMOPA6H" device="" value="TITAN2"/>
 <part name="SUPPLY6" library="supply2" deviceset="VCC" device=""/>
 <part name="U$4" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$6" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$7" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$8" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$9" library="microbuilder" deviceset="GND" device=""/>
-<part name="N550" library="D52Q" deviceset="ANTAP28" device=""/>
+<part name="D52Q" library="D52Q" deviceset="ANTAP28" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="VCC" device=""/>
 <part name="NAV" library="SparkFun-Electromechanical" deviceset="NAV_SWITCH" device="SMD"/>
 <part name="MK20DN512" library="MK20DN512" deviceset="MK20DN512" device=""/>
@@ -5690,8 +5609,8 @@ interface.</description>
 <instance part="C4" gate="G$1" x="238.76" y="-256.54"/>
 <instance part="C5" gate="G$1" x="297.18" y="-256.54"/>
 <instance part="D1" gate="G$1" x="279.4" y="-279.4" rot="R180"/>
-<instance part="BMP180" gate="G$1" x="241.3" y="-337.82"/>
-<instance part="U$21" gate="G$1" x="264.16" y="-342.9" rot="R90"/>
+<instance part="MS5637" gate="G$1" x="243.84" y="-340.36" rot="R270"/>
+<instance part="U$21" gate="G$1" x="246.38" y="-360.68"/>
 <instance part="U$22" gate="G$1" x="276.86" y="-350.52"/>
 <instance part="C7" gate="G$1" x="287.02" y="-340.36"/>
 <instance part="C8" gate="G$1" x="297.18" y="-340.36"/>
@@ -5701,14 +5620,14 @@ interface.</description>
 <instance part="SUPPLY5" gate="G$1" x="220.98" y="-261.62"/>
 <instance part="R5" gate="G$1" x="203.2" y="-274.32" rot="R270"/>
 <instance part="R6" gate="G$1" x="220.98" y="-274.32" rot="R270"/>
-<instance part="MT3339" gate="G$1" x="177.8" y="-147.32"/>
+<instance part="MT3333" gate="G$1" x="177.8" y="-147.32"/>
 <instance part="SUPPLY6" gate="G$1" x="121.92" y="-129.54"/>
 <instance part="U$4" gate="G$1" x="121.92" y="-152.4"/>
 <instance part="U$6" gate="G$1" x="149.86" y="-142.24" rot="R270"/>
 <instance part="U$7" gate="G$1" x="149.86" y="-154.94" rot="R270"/>
 <instance part="U$8" gate="G$1" x="205.74" y="-139.7" rot="R90"/>
 <instance part="U$9" gate="G$1" x="205.74" y="-157.48" rot="R90"/>
-<instance part="N550" gate="G$1" x="-91.44" y="-35.56" rot="R90"/>
+<instance part="D52Q" gate="G$1" x="-91.44" y="-35.56" rot="R90"/>
 <instance part="SUPPLY7" gate="G$1" x="-132.08" y="-22.86" rot="R180"/>
 <instance part="NAV" gate="G$1" x="-116.84" y="38.1" rot="R90"/>
 <instance part="MK20DN512" gate="G$1" x="5.08" y="-132.08"/>
@@ -5760,7 +5679,7 @@ interface.</description>
 <instance part="U$19" gate="G$1" x="-124.46" y="-43.18" rot="R270"/>
 <instance part="SST25" gate="G$1" x="154.94" y="-104.14"/>
 <instance part="U$38" gate="G$1" x="121.92" y="-104.14" rot="R270"/>
-<instance part="SUPPLY20" gate="G$1" x="175.26" y="-86.36"/>
+<instance part="SUPPLY20" gate="G$1" x="175.26" y="-88.9" rot="R270"/>
 <instance part="U$44" gate="G$1" x="238.76" y="-264.16"/>
 <instance part="U$45" gate="G$1" x="246.38" y="-281.94"/>
 <instance part="U$46" gate="G$1" x="297.18" y="-269.24"/>
@@ -5808,9 +5727,9 @@ interface.</description>
 <wire x1="134.62" y1="-58.42" x2="132.08" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="BMP180" gate="G$1" pin="GND"/>
+<pinref part="MS5637" gate="G$1" pin="GND"/>
 <pinref part="U$21" gate="G$1" pin="GND"/>
-<wire x1="256.54" y1="-342.9" x2="261.62" y2="-342.9" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="-353.06" x2="246.38" y2="-358.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$22" gate="G$1" pin="GND"/>
@@ -5827,21 +5746,21 @@ interface.</description>
 </segment>
 <segment>
 <pinref part="U$7" gate="G$1" pin="GND"/>
-<pinref part="MT3339" gate="G$1" pin="GND@2"/>
+<pinref part="MT3333" gate="G$1" pin="GND@2"/>
 <wire x1="152.4" y1="-154.94" x2="162.56" y2="-154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="GND"/>
-<pinref part="MT3339" gate="G$1" pin="GND@1"/>
+<pinref part="MT3333" gate="G$1" pin="GND@1"/>
 <wire x1="152.4" y1="-142.24" x2="162.56" y2="-142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="MT3339" gate="G$1" pin="GND@3"/>
+<pinref part="MT3333" gate="G$1" pin="GND@3"/>
 <pinref part="U$9" gate="G$1" pin="GND"/>
 <wire x1="193.04" y1="-157.48" x2="203.2" y2="-157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="MT3339" gate="G$1" pin="GND@4"/>
+<pinref part="MT3333" gate="G$1" pin="GND@4"/>
 <pinref part="U$8" gate="G$1" pin="GND"/>
 <wire x1="193.04" y1="-139.7" x2="203.2" y2="-139.7" width="0.1524" layer="91"/>
 </segment>
@@ -6018,7 +5937,7 @@ interface.</description>
 </segment>
 <segment>
 <pinref part="U$19" gate="G$1" pin="GND"/>
-<pinref part="N550" gate="G$1" pin="GND"/>
+<pinref part="D52Q" gate="G$1" pin="GND"/>
 <wire x1="-121.92" y1="-43.18" x2="-119.38" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="-119.38" y1="-43.18" x2="-119.38" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
@@ -6071,10 +5990,10 @@ interface.</description>
 <segment>
 <wire x1="198.12" y1="-251.46" x2="215.9" y2="-251.46" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="-251.46" x2="215.9" y2="-279.4" width="0.1524" layer="91"/>
-<pinref part="BMP180" gate="G$1" pin="SDA"/>
+<pinref part="MS5637" gate="G$1" pin="SDA"/>
 <wire x1="215.9" y1="-279.4" x2="215.9" y2="-309.88" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="-309.88" x2="215.9" y2="-335.28" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="-335.28" x2="226.06" y2="-335.28" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="-309.88" x2="215.9" y2="-325.12" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="-325.12" x2="238.76" y2="-325.12" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="220.98" y1="-279.4" x2="215.9" y2="-279.4" width="0.1524" layer="91"/>
 <junction x="215.9" y="-279.4"/>
@@ -6096,10 +6015,10 @@ interface.</description>
 <segment>
 <wire x1="193.04" y1="-254" x2="210.82" y2="-254" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="-254" x2="210.82" y2="-279.4" width="0.1524" layer="91"/>
-<pinref part="BMP180" gate="G$1" pin="SCL"/>
+<pinref part="MS5637" gate="G$1" pin="SCL"/>
 <wire x1="210.82" y1="-279.4" x2="210.82" y2="-309.88" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="-309.88" x2="210.82" y2="-340.36" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="-340.36" x2="226.06" y2="-340.36" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="-309.88" x2="210.82" y2="-353.06" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="-353.06" x2="238.76" y2="-353.06" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="203.2" y1="-279.4" x2="210.82" y2="-279.4" width="0.1524" layer="91"/>
 <junction x="210.82" y="-279.4"/>
@@ -6119,7 +6038,7 @@ interface.</description>
 </net>
 <net name="MK_RX1" class="0">
 <segment>
-<pinref part="MT3339" gate="G$1" pin="TX"/>
+<pinref part="MT3333" gate="G$1" pin="TX"/>
 <wire x1="162.56" y1="-157.48" x2="68.58" y2="-157.48" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="-157.48" x2="68.58" y2="-162.56" width="0.1524" layer="91"/>
 <pinref part="MK20DN512" gate="G$1" pin="PTB16"/>
@@ -6128,7 +6047,7 @@ interface.</description>
 </net>
 <net name="MK_TX1" class="0">
 <segment>
-<pinref part="MT3339" gate="G$1" pin="RX"/>
+<pinref part="MT3333" gate="G$1" pin="RX"/>
 <wire x1="55.88" y1="-160.02" x2="162.56" y2="-160.02" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="-160.02" x2="55.88" y2="-157.48" width="0.1524" layer="91"/>
 <pinref part="MK20DN512" gate="G$1" pin="PTB17"/>
@@ -6355,7 +6274,7 @@ interface.</description>
 <wire x1="-111.76" y1="-60.96" x2="-55.88" y2="-60.96" width="0.1524" layer="91"/>
 <pinref part="MK20DN512" gate="G$1" pin="PTD3"/>
 <wire x1="-55.88" y1="-60.96" x2="-55.88" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="N550" gate="G$1" pin="P007"/>
+<pinref part="D52Q" gate="G$1" pin="P007"/>
 <wire x1="-111.76" y1="-60.96" x2="-111.76" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6364,7 +6283,7 @@ interface.</description>
 <pinref part="MK20DN512" gate="G$1" pin="PTD2"/>
 <wire x1="-50.8" y1="-73.66" x2="-50.8" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="-66.04" x2="-114.3" y2="-66.04" width="0.1524" layer="91"/>
-<pinref part="N550" gate="G$1" pin="P006"/>
+<pinref part="D52Q" gate="G$1" pin="P006"/>
 <wire x1="-114.3" y1="-66.04" x2="-114.3" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6471,17 +6390,14 @@ interface.</description>
 <junction x="106.68" y="-48.26"/>
 </segment>
 <segment>
-<pinref part="BMP180" gate="G$1" pin="VDD"/>
-<wire x1="256.54" y1="-332.74" x2="276.86" y2="-332.74" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="-335.28" x2="276.86" y2="-332.74" width="0.1524" layer="91"/>
+<pinref part="MS5637" gate="G$1" pin="VDD"/>
+<wire x1="246.38" y1="-325.12" x2="276.86" y2="-325.12" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="-335.28" x2="276.86" y2="-325.12" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="-335.28" x2="287.02" y2="-335.28" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="P$1"/>
 <wire x1="287.02" y1="-335.28" x2="297.18" y2="-335.28" width="0.1524" layer="91"/>
 <junction x="287.02" y="-335.28"/>
 <pinref part="C8" gate="G$1" pin="P$1"/>
-<pinref part="BMP180" gate="G$1" pin="VDDIO"/>
-<wire x1="256.54" y1="-337.82" x2="256.54" y2="-332.74" width="0.1524" layer="91"/>
-<junction x="256.54" y="-332.74"/>
 <pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
 <junction x="297.18" y="-335.28"/>
 <pinref part="C6" gate="G$1" pin="P$1"/>
@@ -6501,14 +6417,14 @@ interface.</description>
 <segment>
 <pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
 <wire x1="121.92" y1="-137.16" x2="121.92" y2="-132.08" width="0.1524" layer="91"/>
-<pinref part="MT3339" gate="G$1" pin="VCC"/>
+<pinref part="MT3333" gate="G$1" pin="VCC"/>
 <wire x1="121.92" y1="-137.16" x2="162.56" y2="-137.16" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="P$1"/>
 <wire x1="121.92" y1="-139.7" x2="121.92" y2="-137.16" width="0.1524" layer="91"/>
 <junction x="121.92" y="-137.16"/>
 </segment>
 <segment>
-<pinref part="N550" gate="G$1" pin="VCC"/>
+<pinref part="D52Q" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
 <wire x1="-129.54" y1="-17.78" x2="-132.08" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
@@ -6590,7 +6506,7 @@ interface.</description>
 <segment>
 <pinref part="SST25" gate="G$1" pin="VDD"/>
 <pinref part="SUPPLY20" gate="G$1" pin="VCC"/>
-<wire x1="160.02" y1="-88.9" x2="175.26" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="-88.9" x2="172.72" y2="-88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JTAG" gate="G$1" pin="VCC"/>
@@ -6686,7 +6602,7 @@ interface.</description>
 <wire x1="-106.68" y1="-53.34" x2="-45.72" y2="-53.34" width="0.1524" layer="91"/>
 <pinref part="MK20DN512" gate="G$1" pin="PTD1"/>
 <wire x1="-45.72" y1="-53.34" x2="-45.72" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="N550" gate="G$1" pin="P008"/>
+<pinref part="D52Q" gate="G$1" pin="P008"/>
 <wire x1="-106.68" y1="-53.34" x2="-106.68" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6695,7 +6611,7 @@ interface.</description>
 <wire x1="-104.14" y1="-48.26" x2="-40.64" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="MK20DN512" gate="G$1" pin="PTD0"/>
 <wire x1="-40.64" y1="-48.26" x2="-40.64" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="N550" gate="G$1" pin="P011"/>
+<pinref part="D52Q" gate="G$1" pin="P011"/>
 <wire x1="-104.14" y1="-48.26" x2="-104.14" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6708,7 +6624,7 @@ interface.</description>
 </net>
 <net name="VPERM" class="0">
 <segment>
-<pinref part="MT3339" gate="G$1" pin="VBACKUP"/>
+<pinref part="MT3333" gate="G$1" pin="VBACKUP"/>
 <wire x1="162.56" y1="-144.78" x2="142.24" y2="-144.78" width="0.1524" layer="91"/>
 <label x="137.16" y="-144.78" size="1.778" layer="95"/>
 </segment>
@@ -6720,7 +6636,7 @@ interface.</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="N550" gate="G$1" pin="P017"/>
+<pinref part="D52Q" gate="G$1" pin="P017"/>
 <pinref part="SPK" gate="G$1" pin="2"/>
 <wire x1="-104.14" y1="15.24" x2="-104.14" y2="22.86" width="0.1524" layer="91"/>
 </segment>
@@ -6729,27 +6645,27 @@ interface.</description>
 <segment>
 <pinref part="SPK" gate="G$1" pin="1"/>
 <wire x1="-104.14" y1="38.1" x2="-106.68" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="N550" gate="G$1" pin="P016"/>
+<pinref part="D52Q" gate="G$1" pin="P016"/>
 <wire x1="-106.68" y1="38.1" x2="-106.68" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="N550" gate="G$1" pin="P012"/>
+<pinref part="D52Q" gate="G$1" pin="P012"/>
 <pinref part="NAV" gate="G$1" pin="1"/>
 <wire x1="-119.38" y1="15.24" x2="-119.38" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="N550" gate="G$1" pin="P031"/>
+<pinref part="D52Q" gate="G$1" pin="P031"/>
 <pinref part="NAV" gate="G$1" pin="T"/>
 <wire x1="-116.84" y1="15.24" x2="-116.84" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="N550" gate="G$1" pin="P013"/>
+<pinref part="D52Q" gate="G$1" pin="P013"/>
 <pinref part="NAV" gate="G$1" pin="2"/>
 <wire x1="-114.3" y1="15.24" x2="-114.3" y2="30.48" width="0.1524" layer="91"/>
 </segment>
@@ -6759,13 +6675,13 @@ interface.</description>
 <pinref part="JTAG1" gate="G$1" pin="SWDIO/TMS"/>
 <wire x1="-149.86" y1="-20.32" x2="-137.16" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="-137.16" y1="-20.32" x2="-137.16" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="N550" gate="G$1" pin="SWDIO"/>
+<pinref part="D52Q" gate="G$1" pin="SWDIO"/>
 <wire x1="-137.16" y1="-7.62" x2="-129.54" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="N550" gate="G$1" pin="SWDCLK"/>
+<pinref part="D52Q" gate="G$1" pin="SWDCLK"/>
 <wire x1="-116.84" y1="-40.64" x2="-116.84" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="-116.84" y1="-50.8" x2="-142.24" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="-142.24" y1="-50.8" x2="-142.24" y2="-17.78" width="0.1524" layer="91"/>
@@ -6777,9 +6693,7 @@ interface.</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,256.54,-332.74,BMP180,VDD,VCC,,,"/>
-<approved hash="104,1,256.54,-337.82,BMP180,VDDIO,VCC,,,"/>
-<approved hash="104,1,-129.54,-7.62,N550,SWDIO,N$11,,,"/>
+<approved hash="104,1,-129.54,-7.62,D52Q,SWDIO,N$11,,,"/>
 <approved hash="104,1,-116.84,45.72,NAV,C,GND,,,"/>
 <approved hash="202,1,-170.18,-50.8,LDO0,BP,,,,"/>
 <approved hash="202,1,284.48,-218.44,LDO1,BP,,,,"/>
