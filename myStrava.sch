@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5291,94 +5291,6 @@ interface.</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="D52Q">
-<description>ANTAP28 from dynastream is used for ANT+ RF connections</description>
-<packages>
-<package name="ANTAP">
-<wire x1="0" y1="0" x2="0" y2="20" width="0.127" layer="21"/>
-<wire x1="0" y1="20" x2="20" y2="20" width="0.127" layer="21"/>
-<wire x1="20" y1="20" x2="20" y2="0" width="0.127" layer="21"/>
-<wire x1="20" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<smd name="P021" x="10" y="19.5" dx="2.5" dy="0.9652" layer="1" rot="R90"/>
-<smd name="VCC" x="8" y="19.5" dx="2.5" dy="0.9652" layer="1" rot="R90"/>
-<smd name="SWDIO" x="12" y="19.5" dx="2.5" dy="0.9652" layer="1" rot="R90"/>
-<smd name="P012" x="19.5" y="19" dx="2.5" dy="0.9652" layer="1" rot="R180"/>
-<smd name="SWDCLCK" x="0.5" y="17" dx="2.5" dy="0.9652" layer="1" rot="R180"/>
-<smd name="P006" x="0.5" y="15" dx="2.5" dy="0.9652" layer="1" rot="R180"/>
-<smd name="P007" x="0.5" y="13" dx="2.5" dy="0.9652" layer="1" rot="R180"/>
-<smd name="P002" x="0.5" y="11" dx="2.5" dy="0.9652" layer="1" rot="R180"/>
-<smd name="P008" x="0.5" y="9" dx="2.5" dy="0.9652" layer="1" rot="R180"/>
-<smd name="GND" x="0.5" y="19" dx="2.5" dy="0.9652" layer="1" rot="R180"/>
-<smd name="P011" x="0.5" y="7" dx="2.5" dy="0.9652" layer="1" rot="R180"/>
-<smd name="P031" x="19.5" y="17" dx="2.5" dy="0.9652" layer="1" rot="R180"/>
-<smd name="P016" x="19.5" y="9" dx="2.5" dy="0.9652" layer="1" rot="R180"/>
-<smd name="P013" x="19.5" y="15" dx="2.5" dy="0.9652" layer="1" rot="R180"/>
-<smd name="P015" x="19.5" y="11" dx="2.5" dy="0.9652" layer="1" rot="R180"/>
-<smd name="P017" x="19.5" y="7" dx="2.5" dy="0.9652" layer="1" rot="R180"/>
-<smd name="P014" x="19.5" y="13" dx="2.5" dy="0.9652" layer="1" rot="R180"/>
-<text x="1.27" y="1.27" size="1.27" layer="21">D52Q</text>
-</package>
-</packages>
-<symbols>
-<symbol name="ANTAP28">
-<wire x1="0" y1="33.02" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="45.72" y2="0" width="0.254" layer="94"/>
-<wire x1="45.72" y1="0" x2="45.72" y2="33.02" width="0.254" layer="94"/>
-<wire x1="45.72" y1="33.02" x2="0" y2="33.02" width="0.254" layer="94"/>
-<pin name="GND" x="-5.08" y="27.94" length="middle" direction="pwr"/>
-<pin name="P006" x="-5.08" y="22.86" length="middle"/>
-<pin name="P007" x="-5.08" y="20.32" length="middle"/>
-<pin name="P008" x="-5.08" y="15.24" length="middle"/>
-<pin name="P011" x="-5.08" y="12.7" length="middle"/>
-<pin name="P012" x="50.8" y="27.94" length="middle" rot="R180"/>
-<pin name="P031" x="50.8" y="25.4" length="middle" rot="R180"/>
-<pin name="P013" x="50.8" y="22.86" length="middle" rot="R180"/>
-<pin name="P014" x="50.8" y="20.32" length="middle" rot="R180"/>
-<pin name="P015" x="50.8" y="17.78" length="middle" rot="R180"/>
-<pin name="P016" x="50.8" y="15.24" length="middle" direction="in" rot="R180"/>
-<pin name="P017" x="50.8" y="12.7" length="middle" direction="out" rot="R180"/>
-<pin name="VCC" x="17.78" y="38.1" length="middle" direction="pwr" rot="R270"/>
-<pin name="P021" x="22.86" y="38.1" length="middle" rot="R270"/>
-<pin name="SWDIO" x="27.94" y="38.1" length="middle" direction="pwr" rot="R270"/>
-<pin name="P002" x="-5.08" y="17.78" length="middle"/>
-<pin name="SWDCLK" x="-5.08" y="25.4" length="middle"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ANTAP28">
-<description>N548M4CB and ANTAP28 dynastream devices</description>
-<gates>
-<gate name="G$1" symbol="ANTAP28" x="-22.86" y="-12.7"/>
-</gates>
-<devices>
-<device name="" package="ANTAP">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="P002" pad="P002"/>
-<connect gate="G$1" pin="P006" pad="P006"/>
-<connect gate="G$1" pin="P007" pad="P007"/>
-<connect gate="G$1" pin="P008" pad="P008"/>
-<connect gate="G$1" pin="P011" pad="P011"/>
-<connect gate="G$1" pin="P012" pad="P012"/>
-<connect gate="G$1" pin="P013" pad="P013"/>
-<connect gate="G$1" pin="P014" pad="P014"/>
-<connect gate="G$1" pin="P015" pad="P015"/>
-<connect gate="G$1" pin="P016" pad="P016"/>
-<connect gate="G$1" pin="P017" pad="P017"/>
-<connect gate="G$1" pin="P021" pad="P021"/>
-<connect gate="G$1" pin="P031" pad="P031"/>
-<connect gate="G$1" pin="SWDCLK" pad="SWDCLCK"/>
-<connect gate="G$1" pin="SWDIO" pad="SWDIO"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="MS5637">
 <packages>
 <package name="MS5637TH">
@@ -5451,6 +5363,155 @@ Aucun composant externe (oscillateur interne)</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="N548">
+<packages>
+<package name="N548">
+<pad name="P031" x="0" y="0" drill="0.4" diameter="0.72"/>
+<pad name="P002" x="1.5" y="0" drill="0.4" diameter="0.72"/>
+<pad name="P001" x="3" y="0" drill="0.4" diameter="0.72"/>
+<pad name="P003" x="4.5" y="0" drill="0.4" diameter="0.72"/>
+<pad name="P005" x="6" y="0" drill="0.4" diameter="0.72"/>
+<pad name="P008" x="7.5" y="0" drill="0.4" diameter="0.72"/>
+<pad name="P009" x="7.5" y="1.5" drill="0.4" diameter="0.72"/>
+<pad name="P011" x="6" y="1.5" drill="0.4" diameter="0.72"/>
+<pad name="P006" x="4.5" y="1.5" drill="0.4" diameter="0.72"/>
+<pad name="P004" x="3" y="1.5" drill="0.4" diameter="0.72"/>
+<pad name="P000" x="1.5" y="1.5" drill="0.4" diameter="0.72"/>
+<pad name="P030" x="0" y="1.5" drill="0.4" diameter="0.72"/>
+<pad name="P024" x="0" y="3" drill="0.4" diameter="0.72"/>
+<pad name="P021" x="1.5" y="3" drill="0.4" diameter="0.72"/>
+<pad name="P023" x="3" y="3" drill="0.4" diameter="0.72"/>
+<pad name="P025" x="4.5" y="3" drill="0.4" diameter="0.72"/>
+<pad name="P015" x="6" y="3" drill="0.4" diameter="0.72"/>
+<pad name="P012" x="7.5" y="3" drill="0.4" diameter="0.72"/>
+<pad name="SWDCLK" x="7.5" y="4.5" drill="0.4" diameter="0.72"/>
+<pad name="P013" x="6" y="4.5" drill="0.4" diameter="0.72"/>
+<pad name="P016" x="4.5" y="4.5" drill="0.4" diameter="0.72"/>
+<pad name="P022" x="3" y="4.5" drill="0.4" diameter="0.72"/>
+<pad name="C5" x="1.5" y="4.5" drill="0.4" diameter="0.72"/>
+<pad name="C6" x="0" y="4.5" drill="0.4" diameter="0.72"/>
+<pad name="B6" x="0" y="6" drill="0.4" diameter="0.72"/>
+<pad name="B5" x="1.5" y="6" drill="0.4" diameter="0.72"/>
+<pad name="P019" x="3" y="6" drill="0.4" diameter="0.72"/>
+<pad name="P020" x="4.5" y="6" drill="0.4" diameter="0.72"/>
+<pad name="P018" x="6" y="6" drill="0.4" diameter="0.72"/>
+<pad name="SWDIO" x="7.5" y="6" drill="0.4" diameter="0.72"/>
+<pad name="A6" x="0" y="7.5" drill="0.4" diameter="0.72"/>
+<pad name="A5" x="1.5" y="7.5" drill="0.4" diameter="0.72"/>
+<pad name="A4" x="3" y="7.5" drill="0.4" diameter="0.72"/>
+<pad name="A3" x="4.5" y="7.5" drill="0.4" diameter="0.72"/>
+<pad name="A2" x="6" y="7.5" drill="0.4" diameter="0.72"/>
+<wire x1="-1.15" y1="-1.25" x2="-1.15" y2="14" width="0.127" layer="22"/>
+<wire x1="-1.15" y1="14" x2="8.65" y2="14" width="0.127" layer="22"/>
+<wire x1="8.65" y1="14" x2="8.65" y2="-1.25" width="0.127" layer="22"/>
+<wire x1="8.65" y1="-1.25" x2="-1.15" y2="-1.25" width="0.127" layer="22"/>
+</package>
+</packages>
+<symbols>
+<symbol name="N548">
+<wire x1="0" y1="17.78" x2="0" y2="53.34" width="0.254" layer="94"/>
+<wire x1="0" y1="53.34" x2="53.34" y2="53.34" width="0.254" layer="94"/>
+<wire x1="53.34" y1="53.34" x2="53.34" y2="17.78" width="0.254" layer="94"/>
+<wire x1="53.34" y1="17.78" x2="0" y2="17.78" width="0.254" layer="94"/>
+<pin name="VCC" x="20.32" y="58.42" length="middle" rot="R270"/>
+<pin name="GND" x="35.56" y="58.42" length="middle" rot="R270"/>
+<pin name="P000" x="-5.08" y="50.8" length="middle"/>
+<pin name="P001" x="-5.08" y="48.26" length="middle"/>
+<pin name="P002" x="-5.08" y="45.72" length="middle"/>
+<pin name="P003" x="-5.08" y="43.18" length="middle"/>
+<pin name="P004" x="-5.08" y="40.64" length="middle"/>
+<pin name="P005" x="-5.08" y="38.1" length="middle"/>
+<pin name="P006" x="-5.08" y="35.56" length="middle"/>
+<pin name="P008" x="-5.08" y="33.02" length="middle"/>
+<pin name="P009" x="-5.08" y="30.48" length="middle"/>
+<pin name="P011" x="-5.08" y="27.94" length="middle"/>
+<pin name="P012" x="-5.08" y="25.4" length="middle"/>
+<pin name="P013" x="-5.08" y="22.86" length="middle"/>
+<pin name="P015" x="58.42" y="50.8" length="middle" rot="R180"/>
+<pin name="P016" x="58.42" y="48.26" length="middle" rot="R180"/>
+<pin name="P018" x="58.42" y="45.72" length="middle" rot="R180"/>
+<pin name="P019" x="58.42" y="43.18" length="middle" rot="R180"/>
+<pin name="P020" x="58.42" y="40.64" length="middle" rot="R180"/>
+<pin name="P021" x="58.42" y="38.1" length="middle" rot="R180"/>
+<pin name="P022" x="58.42" y="35.56" length="middle" rot="R180"/>
+<pin name="P023" x="58.42" y="33.02" length="middle" rot="R180"/>
+<pin name="P024" x="58.42" y="30.48" length="middle" rot="R180"/>
+<pin name="P025" x="58.42" y="27.94" length="middle" rot="R180"/>
+<pin name="P030" x="58.42" y="25.4" length="middle" rot="R180"/>
+<pin name="P031" x="58.42" y="22.86" length="middle" rot="R180"/>
+<pin name="SWDIO" x="20.32" y="12.7" length="middle" rot="R90"/>
+<pin name="SWDCLK" x="35.56" y="12.7" length="middle" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="N548">
+<description>Based on Nordic Semiconductor’s nRF51422 SoC, the N5 ANT SoC module series offers support for both ANT®
+and Bluetooth® low energy and enables both protocols to run concurrently, depending on the loaded protocol
+stack.
+The N5 ANT SoC module series starts with N548M8CB in a 14.0mm x 9.8mm x 2.0mm LGA (Land Array Grid)
+package. A compact design meeting the market requirements for small, light and wearable, the N548M8CB is a
+turnkey system hardware solution including antenna, onboard 32k and 16M crystal clocks, DC-DC converter and 24
+GPIOs with 6 analogue inputs.
+The N548 modules are pre-programmed with the following software components:
+ S210 SoftDevice (ANT 8-channel protocol stack)
+ ANT network processor application
+ ANT-WP (Wireless Programming) bootloader (depends on module version)
+SoftDevices are protocol stack solutions from Nordic Semiconductor for the nRF51 SoCs. There are multiple
+SoftDevice choices available from the Nordic Semiconductor’s web site. The ANT network processor application
+offers the standard ANT serial interface front-end that is connectable to an external application controller. The
+ANT-WP bootloader allows over-the-air updates of any software components on the N548 module.
+The N548 module pre-programmed image can be easily replaced via the onboard SWD interface pins using offthe-
+shelf ARM programming tools or over the air using the pre-loaded ANT-WP bootloader.
+Pin compatible options to the 20mm x 20mm AP2 or C7 modules from Dynastream are also available. In these
+options, N548M8CB modules are soldered on carrier boards that are pin compatible to the previous modules.
+Current AP2 or C7 module customers can easily use these models to evaluate the hardware and upgrade their
+products.
+The N5 module series if loaded with ANT and/or BLUETOOTH Low energy stack has been certified to comply with
+radio regulation or standards covering major markets include North America, Europe, Australia, New Zealand and
+Japan. The N5 ANT SoC modules series has also been qualified by the BLUETOOTH SIG.</description>
+<gates>
+<gate name="G$1" symbol="N548" x="0" y="-17.78"/>
+</gates>
+<devices>
+<device name="" package="N548">
+<connects>
+<connect gate="G$1" pin="GND" pad="A2 A3 A4 A5 A6"/>
+<connect gate="G$1" pin="P000" pad="P000"/>
+<connect gate="G$1" pin="P001" pad="P001"/>
+<connect gate="G$1" pin="P002" pad="P002"/>
+<connect gate="G$1" pin="P003" pad="P003"/>
+<connect gate="G$1" pin="P004" pad="P004"/>
+<connect gate="G$1" pin="P005" pad="P005"/>
+<connect gate="G$1" pin="P006" pad="P006"/>
+<connect gate="G$1" pin="P008" pad="P008"/>
+<connect gate="G$1" pin="P009" pad="P009"/>
+<connect gate="G$1" pin="P011" pad="P011"/>
+<connect gate="G$1" pin="P012" pad="P012"/>
+<connect gate="G$1" pin="P013" pad="P013"/>
+<connect gate="G$1" pin="P015" pad="P015"/>
+<connect gate="G$1" pin="P016" pad="P016"/>
+<connect gate="G$1" pin="P018" pad="P018"/>
+<connect gate="G$1" pin="P019" pad="P019"/>
+<connect gate="G$1" pin="P020" pad="P020"/>
+<connect gate="G$1" pin="P021" pad="P021"/>
+<connect gate="G$1" pin="P022" pad="P022"/>
+<connect gate="G$1" pin="P023" pad="P023"/>
+<connect gate="G$1" pin="P024" pad="P024"/>
+<connect gate="G$1" pin="P025" pad="P025"/>
+<connect gate="G$1" pin="P030" pad="P030"/>
+<connect gate="G$1" pin="P031" pad="P031"/>
+<connect gate="G$1" pin="SWDCLK" pad="SWDCLK"/>
+<connect gate="G$1" pin="SWDIO" pad="SWDIO"/>
+<connect gate="G$1" pin="VCC" pad="B5 B6 C5 C6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5503,7 +5564,7 @@ Aucun composant externe (oscillateur interne)</description>
 <part name="U$7" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$8" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$9" library="microbuilder" deviceset="GND" device=""/>
-<part name="D52Q" library="D52Q" deviceset="ANTAP28" device=""/>
+<part name="D52Q" library="N548" deviceset="N548" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="VCC" device=""/>
 <part name="NAV" library="SparkFun-Electromechanical" deviceset="NAV_SWITCH" device="SMD"/>
 <part name="MK20DN512" library="MK20DN512" deviceset="MK20DN512" device=""/>
@@ -5627,9 +5688,9 @@ Aucun composant externe (oscillateur interne)</description>
 <instance part="U$7" gate="G$1" x="149.86" y="-154.94" rot="R270"/>
 <instance part="U$8" gate="G$1" x="205.74" y="-139.7" rot="R90"/>
 <instance part="U$9" gate="G$1" x="205.74" y="-157.48" rot="R90"/>
-<instance part="D52Q" gate="G$1" x="-91.44" y="-35.56" rot="R90"/>
-<instance part="SUPPLY7" gate="G$1" x="-132.08" y="-22.86" rot="R180"/>
-<instance part="NAV" gate="G$1" x="-116.84" y="38.1" rot="R90"/>
+<instance part="D52Q" gate="G$1" x="-129.54" y="12.7" rot="R270"/>
+<instance part="SUPPLY7" gate="G$1" x="-60.96" y="-7.62" rot="R270"/>
+<instance part="NAV" gate="G$1" x="-88.9" y="38.1" rot="R90"/>
 <instance part="MK20DN512" gate="G$1" x="5.08" y="-132.08"/>
 <instance part="LDO0" gate="G$1" x="-177.8" y="-45.72"/>
 <instance part="U$13" gate="G$1" x="332.74" y="-254"/>
@@ -5676,7 +5737,7 @@ Aucun composant externe (oscillateur interne)</description>
 <instance part="SUPPLY18" gate="G$1" x="22.86" y="58.42"/>
 <instance part="C11" gate="G$1" x="45.72" y="-22.86"/>
 <instance part="U$18" gate="G$1" x="45.72" y="-33.02"/>
-<instance part="U$19" gate="G$1" x="-124.46" y="-43.18" rot="R270"/>
+<instance part="U$19" gate="G$1" x="-58.42" y="-22.86" rot="R90"/>
 <instance part="SST25" gate="G$1" x="154.94" y="-104.14"/>
 <instance part="U$38" gate="G$1" x="121.92" y="-104.14" rot="R270"/>
 <instance part="SUPPLY20" gate="G$1" x="175.26" y="-88.9" rot="R270"/>
@@ -5689,7 +5750,7 @@ Aucun composant externe (oscillateur interne)</description>
 <instance part="JTAG" gate="G$1" x="-33.02" y="-259.08" rot="R270"/>
 <instance part="U$51" gate="G$1" x="-40.64" y="-246.38" rot="R180"/>
 <instance part="SUPPLY19" gate="G$1" x="-22.86" y="-248.92"/>
-<instance part="SPK" gate="G$1" x="-104.14" y="30.48" rot="R270"/>
+<instance part="SPK" gate="G$1" x="-104.14" y="38.1" rot="R90"/>
 <instance part="STC3100" gate="G$1" x="398.78" y="-226.06" rot="R180"/>
 <instance part="U$10" gate="G$1" x="434.34" y="-241.3" rot="R90"/>
 <instance part="R3" gate="G$1" x="419.1" y="-241.3"/>
@@ -5713,7 +5774,7 @@ Aucun composant externe (oscillateur interne)</description>
 <instance part="R14" gate="G$1" x="-152.4" y="-109.22" rot="R180"/>
 <instance part="D3" gate="G$1" x="-203.2" y="-76.2" rot="R90"/>
 <instance part="SUPPLY21" gate="G$1" x="88.9" y="-193.04" rot="R270"/>
-<instance part="U$1" gate="G$1" x="-116.84" y="53.34" rot="R180"/>
+<instance part="U$1" gate="G$1" x="-88.9" y="53.34" rot="R180"/>
 <instance part="LDO1" gate="G$1" x="292.1" y="-223.52" rot="R180"/>
 <instance part="U$17" gate="G$1" x="309.88" y="-223.52" rot="R90"/>
 </instances>
@@ -5918,7 +5979,7 @@ Aucun composant externe (oscillateur interne)</description>
 <segment>
 <pinref part="NAV" gate="G$1" pin="C"/>
 <pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="-116.84" y1="45.72" x2="-116.84" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="45.72" x2="-88.9" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LDO1" gate="G$1" pin="GND"/>
@@ -5936,10 +5997,9 @@ Aucun composant externe (oscillateur interne)</description>
 <junction x="-144.78" y="-5.08"/>
 </segment>
 <segment>
-<pinref part="U$19" gate="G$1" pin="GND"/>
 <pinref part="D52Q" gate="G$1" pin="GND"/>
-<wire x1="-121.92" y1="-43.18" x2="-119.38" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="-119.38" y1="-43.18" x2="-119.38" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="U$19" gate="G$1" pin="GND"/>
+<wire x1="-71.12" y1="-22.86" x2="-60.96" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -6269,24 +6329,6 @@ Aucun composant externe (oscillateur interne)</description>
 <junction x="106.68" y="-71.12"/>
 </segment>
 </net>
-<net name="MK_TX3" class="0">
-<segment>
-<wire x1="-111.76" y1="-60.96" x2="-55.88" y2="-60.96" width="0.1524" layer="91"/>
-<pinref part="MK20DN512" gate="G$1" pin="PTD3"/>
-<wire x1="-55.88" y1="-60.96" x2="-55.88" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="D52Q" gate="G$1" pin="P007"/>
-<wire x1="-111.76" y1="-60.96" x2="-111.76" y2="-40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="MK_RX3" class="0">
-<segment>
-<pinref part="MK20DN512" gate="G$1" pin="PTD2"/>
-<wire x1="-50.8" y1="-73.66" x2="-50.8" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="-66.04" x2="-114.3" y2="-66.04" width="0.1524" layer="91"/>
-<pinref part="D52Q" gate="G$1" pin="P006"/>
-<wire x1="-114.3" y1="-66.04" x2="-114.3" y2="-40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$32" class="0">
 <segment>
 <pinref part="SST25" gate="G$1" pin="CE"/>
@@ -6426,7 +6468,7 @@ Aucun composant externe (oscillateur interne)</description>
 <segment>
 <pinref part="D52Q" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
-<wire x1="-129.54" y1="-17.78" x2="-132.08" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="-7.62" x2="-63.5" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LDO0" gate="G$1" pin="OUT"/>
@@ -6597,24 +6639,6 @@ Aucun composant externe (oscillateur interne)</description>
 <junction x="279.4" y="-261.62"/>
 </segment>
 </net>
-<net name="N$18" class="0">
-<segment>
-<wire x1="-106.68" y1="-53.34" x2="-45.72" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="MK20DN512" gate="G$1" pin="PTD1"/>
-<wire x1="-45.72" y1="-53.34" x2="-45.72" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="D52Q" gate="G$1" pin="P008"/>
-<wire x1="-106.68" y1="-53.34" x2="-106.68" y2="-40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<wire x1="-104.14" y1="-48.26" x2="-40.64" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="MK20DN512" gate="G$1" pin="PTD0"/>
-<wire x1="-40.64" y1="-48.26" x2="-40.64" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="D52Q" gate="G$1" pin="P011"/>
-<wire x1="-104.14" y1="-48.26" x2="-104.14" y2="-40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="R13" gate="G$1" pin="2"/>
@@ -6634,67 +6658,108 @@ Aucun composant externe (oscillateur interne)</description>
 <label x="271.78" y="-226.06" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="D52Q" gate="G$1" pin="P017"/>
-<pinref part="SPK" gate="G$1" pin="2"/>
-<wire x1="-104.14" y1="15.24" x2="-104.14" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="SPK" gate="G$1" pin="1"/>
-<wire x1="-104.14" y1="38.1" x2="-106.68" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="D52Q" gate="G$1" pin="P016"/>
-<wire x1="-106.68" y1="38.1" x2="-106.68" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="D52Q" gate="G$1" pin="P012"/>
-<pinref part="NAV" gate="G$1" pin="1"/>
-<wire x1="-119.38" y1="15.24" x2="-119.38" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="D52Q" gate="G$1" pin="P031"/>
-<pinref part="NAV" gate="G$1" pin="T"/>
-<wire x1="-116.84" y1="15.24" x2="-116.84" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="D52Q" gate="G$1" pin="P013"/>
-<pinref part="NAV" gate="G$1" pin="2"/>
-<wire x1="-114.3" y1="15.24" x2="-114.3" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="JTAG1" gate="G$1" pin="SWDIO/TMS"/>
 <wire x1="-149.86" y1="-20.32" x2="-137.16" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="-137.16" y1="-20.32" x2="-137.16" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="D52Q" gate="G$1" pin="SWDIO"/>
-<wire x1="-137.16" y1="-7.62" x2="-129.54" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-137.16" y1="-7.62" x2="-116.84" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="D52Q" gate="G$1" pin="SWDCLK"/>
-<wire x1="-116.84" y1="-40.64" x2="-116.84" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="-116.84" y1="-50.8" x2="-142.24" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="-142.24" y1="-50.8" x2="-142.24" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="-22.86" x2="-127" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="-127" y1="-22.86" x2="-127" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="JTAG1" gate="G$1" pin="SWDCLK/TCK"/>
-<wire x1="-142.24" y1="-17.78" x2="-149.86" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-127" y1="-17.78" x2="-149.86" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="D52Q" gate="G$1" pin="P008"/>
+<wire x1="-96.52" y1="17.78" x2="-96.52" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="NAV" gate="G$1" pin="1"/>
+<wire x1="-96.52" y1="25.4" x2="-91.44" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="25.4" x2="-91.44" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="D52Q" gate="G$1" pin="P005"/>
+<wire x1="-91.44" y1="17.78" x2="-91.44" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="NAV" gate="G$1" pin="T"/>
+<wire x1="-91.44" y1="22.86" x2="-88.9" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="22.86" x2="-88.9" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="D52Q" gate="G$1" pin="P003"/>
+<pinref part="NAV" gate="G$1" pin="2"/>
+<wire x1="-86.36" y1="17.78" x2="-86.36" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="MK20DN512" gate="G$1" pin="PTD0"/>
+<wire x1="-40.64" y1="-73.66" x2="-40.64" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="-58.42" x2="-99.06" y2="-58.42" width="0.1524" layer="91"/>
+<pinref part="D52Q" gate="G$1" pin="P024"/>
+<wire x1="-99.06" y1="-58.42" x2="-99.06" y2="-45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="MK20DN512" gate="G$1" pin="PTD1"/>
+<wire x1="-45.72" y1="-73.66" x2="-45.72" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-60.96" x2="-104.14" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="D52Q" gate="G$1" pin="P030"/>
+<wire x1="-104.14" y1="-60.96" x2="-104.14" y2="-45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="D52Q" gate="G$1" pin="P031"/>
+<wire x1="-106.68" y1="-45.72" x2="-106.68" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="-63.5" x2="-50.8" y2="-63.5" width="0.1524" layer="91"/>
+<pinref part="MK20DN512" gate="G$1" pin="PTD2"/>
+<wire x1="-50.8" y1="-63.5" x2="-50.8" y2="-73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="D52Q" gate="G$1" pin="P002"/>
+<wire x1="-83.82" y1="17.78" x2="-83.82" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="25.4" x2="-50.8" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="25.4" x2="-50.8" y2="-50.8" width="0.1524" layer="91"/>
+<pinref part="MK20DN512" gate="G$1" pin="PTD3"/>
+<wire x1="-50.8" y1="-50.8" x2="-55.88" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="-50.8" x2="-55.88" y2="-73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="D52Q" gate="G$1" pin="P012"/>
+<pinref part="SPK" gate="G$1" pin="1"/>
+<wire x1="-104.14" y1="17.78" x2="-104.14" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="SPK" gate="G$1" pin="2"/>
+<wire x1="-104.14" y1="45.72" x2="-104.14" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="50.8" x2="-99.06" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="D52Q" gate="G$1" pin="P009"/>
+<wire x1="-99.06" y1="50.8" x2="-99.06" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,-129.54,-7.62,D52Q,SWDIO,N$11,,,"/>
-<approved hash="104,1,-116.84,45.72,NAV,C,GND,,,"/>
+<approved hash="104,1,-88.9,45.72,NAV,C,GND,,,"/>
 <approved hash="202,1,-170.18,-50.8,LDO0,BP,,,,"/>
 <approved hash="202,1,284.48,-218.44,LDO1,BP,,,,"/>
 </errors>
